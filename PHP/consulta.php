@@ -40,15 +40,16 @@
                 }
                 
                 $table = "usuarios";
-                echo "<br><br>".contarRegistros($table)." registros encontrados.<br><br><br>";
+                
                 
                 if(!($filtro === null)){
                    echo "<br><br>A palavra-chave é: "."<strong>".$filtro."</strong><br><br><br>";
                 }
                 
                 if(empty($filtro)){
-                    $registros = lerRegistros($table);
-                   
+                    $registros = lerRegistros($table," order by nome");
+                   echo "<br><br>".contarRegistros($table)." registros encontrados.<br><br><br>";
+                    
                     foreach($registros as $key){
                     echo "Nome ".$key['nome'].'<br>';
                     echo "Email ".$key['email'].'<br>';
@@ -56,7 +57,7 @@
                 }
                         
                 }else{
-                    $registros = lerRegistros($table," WHERE profissao like '%$filtro%'");
+                    $registros = lerRegistros($table," WHERE profissao like '%$filtro%' order by nome");
                     foreach($registros as $key){
                     echo "Nome ".$key['nome'].'<br>';
                     echo "Email ".$key['email'].'<br>';
