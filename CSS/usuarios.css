@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 100%;
+
+}
+
+.container {
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 1200px;
+}
+
+nav {
+    background-color: #555;
+    box-sizing: border-box;
+    float: left;
+    height: 300px;
+    padding: 10px;
+    width: 300px;
+}
+
+section{
+    background-color: #fff;
+    box-sizing: content-box;
+    color: #333;
+    float: left;
+    margin-left: 10px;
+    max-height: 2000px;
+    height: inherit;
+    padding: 10px;
+    width: 870px;
+}
+
+.confirmacao{
+    height: 600px;
+}
+
+.menu{
+    list-style-type: none;
+}
+
+.menu li {
+    background-color: #777;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    width: 250px;
+}
+
+.menu li:hover{
+    background-color: #888;
+}
+
+.botao{
+    border: 1px solid #ddd;
+    height:30px;
+    width: 120px;
+}
+
+.salvar, .limpar, .excluir{
+    background-position: 3%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.salvar {
+    background-color: #4dcb15;
+    background-image: url(../Imagens/salvar.png);
+    
+}
+
+.limpar {
+    background-color:#1d70b9;
+    background-image: url(../Imagens/limpar.png);
+  
+    
+}
+
+.excluir{
+    background-color: #ff0000;
+    background-image: url(../Imagens/excluir.png);
+}
+
+.campo {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 30px;
+    margin-top: 5px;
+    width: 200px; 
+}
+
+fieldset{
+    border-radius: 10px;
+    padding: 20px;
+}
+.titulo {
+    color: #5bb453;
+    font-weight: 900;
+    
+}
+
+a {
+    color: #fff;
+    text-decoration:none;
+}
