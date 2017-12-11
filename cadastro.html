@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Mateus de Araujo">
-        <meta name="description" content="Tela de Cadastro">
-        <link rel="stylesheet" href="CSS/usuarios.css">
-        
-        <title>Login</title>
-        </head>
-    
-    <body>
-        <div class="container">
-            <nav>
-                <ul class="menu">
-                    <li><a href="cadastro.html">Cadastrar aqui!</a></li>
-                    <li><a href="PHP/consulta.php">Consultas</a></li>
-                    </ul>
-                </nav>
-            <section>
-                <h1 class="titulo">Cadastro de usuários</h1>
-                <hr>
-                <br>
-                
-                <form method="post" action="PHP/processa.php">
-                    <fieldset>
-                        <legend>Preencha todos os campos</legend>
-                        <input type="submit" class="botao salvar" value="Salvar">
-                        <input type="reset" class="botao limpar" value="Limpar">
-                        <input type="button" class="botao excluir" value="Excluir">
 
-                        <br><br>
-                        <label>Nome do cliente: <br>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Mateus de Araujo">
+    <meta name="description" content="Tela de Cadastro">
+    <link rel="stylesheet" href="CSS/usuarios.css">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul class="menu">
+                <li><a href="cadastro.html">Cadastrar aqui!</a></li>
+                <li><a href="PHP/consulta.php">Consultas</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1 class="titulo">Cadastro de usuários</h1>
+            <hr>
+            <br>
+
+            <form method="post" action="PHP/processa.php">
+                <fieldset>
+                    <legend>Preencha todos os campos</legend>
+                    <input type="submit" class="botao salvar" value="Salvar">
+                    <input type="reset" class="botao limpar" value="Limpar">
+                    <input type="button" class="botao excluir" value="Excluir">
+
+                    <br><br>
+                    <label>Nome do cliente: <br>
                         <input type="text" name="Nome" class="campo" placeholder="Nome do cliente" required autofocus><br></label>
 
-                        <label>E-mail: <br>
+                    <label>E-mail: <br>
                         <input type="email" name="Email" class="campo" placeholder="nome@provedor" required><br></label>
 
-                        <label>Profissão:<br>
+                    <label>Profissão:<br>
                         <input type="text" name="Profissao" class="campo" placeholder="Sua profissão" required><br></label>
 
-                        </fieldset>
-                    
-                    
-                    </form>
-                </section>
-            </div>
-        </body>
-    </html>
-    
+                </fieldset>
+
+
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
