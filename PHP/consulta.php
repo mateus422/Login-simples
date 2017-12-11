@@ -33,7 +33,7 @@
                 </form>
 
                 <?php 
-                $filtro = $_GET['Filtro'];
+                @$filtro = $_GET['Filtro'];
                 
                 if(empty($filtro)){
                     $filtro = null;
