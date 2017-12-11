@@ -48,7 +48,7 @@
                 
                 if(empty($filtro)){
                     $registros = lerRegistros($table," order by nome");
-                   echo "<br><br>".contarRegistros($table)." registros encontrados.<br><br><br>";
+                    echo "<br><br>".contarRegistros($table)." registros encontrados.<br><br><br>";
                     
                     foreach($registros as $key){
                     echo "Nome ".$key['nome'].'<br>';
