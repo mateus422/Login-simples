@@ -56,7 +56,7 @@
                 }
                         
                 }else{
-                    $registros = lerRegistros($table," WHERE profissao = '$filtro'");
+                    $registros = lerRegistros($table," WHERE profissao like '%$filtro%'");
                     foreach($registros as $key){
                     echo "Nome ".$key['nome'].'<br>';
                     echo "Email ".$key['email'].'<br>';
