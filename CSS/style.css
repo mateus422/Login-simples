@@ -1,33 +1,31 @@
 @charset "utf-8";
-
-body{
+body {
     color: #fff;
     font-family: Verdana;
     font-size: 100%;
 }
 
-form {  
+form {
     background-color: darkblue;
     border-radius: 5px;
-    margin: auto;
-    margin-top: 100px;
+    margin: 100px auto auto;
     padding: 20px;
     text-align: center;
     width: 300px;
 }
 
-.campo{
+.campo {
     border-radius: 5px;
     height: 25px;
     margin-top: 5px;
     width: 200px;
 }
 
-a{
+a {
     color: cornflowerblue;
 }
 
-.botao{
+.botao {
     border: 1px solid #ddd;
     height: 30px;
     width: 100px;

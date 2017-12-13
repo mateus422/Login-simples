@@ -16,7 +16,6 @@
         return execute($query);
     }
 
-    
     function contarRegistros($table, $paramentros = null, $colunas = '*'){
         $paramentros = ($paramentros) ? "{$paramentros}" : null;
         
